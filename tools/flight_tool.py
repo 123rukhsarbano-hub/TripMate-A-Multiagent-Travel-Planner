@@ -14,7 +14,7 @@ API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
 
 # Default origin when user says only destination, e.g. "Japan trip"
 # Change this if your default location is not Bangladesh/Dhaka.
-DEFAULT_ORIGIN_IATA = os.getenv("DEFAULT_ORIGIN_IATA", "IND")
+DEFAULT_ORIGIN_IATA = os.getenv("DEFAULT_ORIGIN_IATA", "DEL")
 
 BASE_URL = "https://api.aviationstack.com/v1/flights"
 AIRPORTS = airportsdata.load("IATA")
