@@ -10,10 +10,13 @@ from pydantic import BaseModel
 
 from backend import run_travel_agent
 
+import nest_asyncio
+nest_asyncio.apply()
+
 BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI(title="TripMate AI",
-            description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
+            description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend & MCP",
             version="1.0.0"
             )
 

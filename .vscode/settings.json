@@ -1,4 +1,21 @@
 {
     "python.terminal.useEnvFile": true,
-    "python-envs.defaultEnvManager": "ms-python.python:venv"
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "dpg-dbldrigae00c73bvkb0g-a.oregon-postgres.render.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Render_PostgreSQL-tripmate",
+            "database": "enterprise_ai_w0es",
+            "username": "enterprise_user"
+        }
+    ]
 }
