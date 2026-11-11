@@ -74,7 +74,7 @@ jobs:
   deploy:
     name: Deploy to EC2
     needs: publish
-    runs-on: ubuntu-latest
+     runs-on: [self-hosted, linux, x64, tripmate-ai-ec2]
     environment: production
     permissions:
       contents: read
