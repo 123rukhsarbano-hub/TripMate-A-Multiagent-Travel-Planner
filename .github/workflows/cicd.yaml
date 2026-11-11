@@ -240,7 +240,6 @@ jobs:
             -e AWS_SECRET_ACCESS_KEY \
             -e AWS_REGION \
             -e AWS_DEFAULT_REGION \
-
             -e DATABASE_URL \
             -e GROQ_API_KEY \
             -e AVIATIONSTACK_API_KEY \
