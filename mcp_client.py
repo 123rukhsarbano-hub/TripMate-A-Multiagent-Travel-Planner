@@ -62,12 +62,7 @@ client = MultiServerMCPClient(
         },
         "weather": {
             "transport": "stdio",
-            # Use the same Python environment that runs app.py.
-            # "command": r"C:\TripMate-A-Multiagent-Travel-Planner\.venv\Scripts\python.exe",
-            # "command": r"C:\Users\RUKHSAR BANO\.local\bin\python3.11.exe",
-            # "command": "uv",
-             "command": sys.executable,
-            # Automatically use custom_weather_mcp_server.py from the current project directory.
+            "command": "uv",
             "args": ["run", "--project", str(PROJECT_DIR), "python", str(WEATHER_SERVER_PATH)],
             "env": WEATHER_ENV,
             "cwd": str(PROJECT_DIR)
