@@ -1,5 +1,8 @@
 # Environments
+.env
+.env.*
 .venv
+.git
 env/
 venv/
 ENV/
